@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>日常 | Maureen</title>
+    <meta name="description" content="Maureen&#39;s secret Garden">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.760ca8ec.css" as="style"><link rel="preload" href="/assets/js/app.c7007cc2.js" as="script"><link rel="preload" href="/assets/js/3.d747811d.js" as="script"><link rel="preload" href="/assets/js/2.7c3b14ab.js" as="script"><link rel="preload" href="/assets/js/14.909998d3.js" as="script"><link rel="prefetch" href="/assets/js/10.3a39eca6.js"><link rel="prefetch" href="/assets/js/11.a55c4a00.js"><link rel="prefetch" href="/assets/js/12.9d34ec15.js"><link rel="prefetch" href="/assets/js/13.f8a9c860.js"><link rel="prefetch" href="/assets/js/15.9ee2e3dc.js"><link rel="prefetch" href="/assets/js/16.e566454c.js"><link rel="prefetch" href="/assets/js/4.d4863e86.js"><link rel="prefetch" href="/assets/js/5.014cc91d.js"><link rel="prefetch" href="/assets/js/6.d595216a.js"><link rel="prefetch" href="/assets/js/7.ae063ce4.js"><link rel="prefetch" href="/assets/js/8.950d680c.js"><link rel="prefetch" href="/assets/js/9.f9e9213f.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.760ca8ec.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar abcdefg"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Maureen</span></a> <!----> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <!----> </aside> <main class="page"><div class="content default"><h1 id="日常"><a href="#日常" aria-hidden="true" class="header-anchor">#</a> 日常</h1> <ol><li>批量快速处理图片</li></ol> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">with</span> concurrent<span class="token punctuation">.</span>futures<span class="token punctuation">.</span>ProcessPoolExecutor<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">as</span> executor<span class="token punctuation">:</span>
+    image_files <span class="token operator">=</span> glob<span class="token punctuation">.</span>glob<span class="token punctuation">(</span><span class="token string">&quot;*.jpg&quot;</span><span class="token punctuation">)</span>
+    executor<span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span>load_and_resize<span class="token punctuation">,</span> image_files<span class="token punctuation">)</span>
+</code></pre></div><ol start="2"><li><p>Windows下的文件导入到Linux/Mac上时，行尾会有^M出现，把它消除的办法：</p> <ol><li>sed -i 's/^M//g' filename</li> <li>vim filename
+:1,$ s/^M//g</li></ol> <p>其中，^M的输入方法为：ctrl+v, ctrl+M</p></li> <li><p>wikidata里，获奖时间这种property的property，叫做qualifier，用pq来表示</p></li> <li><p>MongoDB，文档型数据库</p></li> <li><p>PostgreSQL是一个<strong>对象－关系</strong>型数据库管理系统</p> <p>表达式索引：允许给函数的计算结果创建索引</p> <p>条件索引：只给符合条件的记录创建索引</p></li> <li><p><strong>pairwise loss</strong></p></li></ol> <p>Given a pair of documents, they try and come up with the optimal ordering for that pair and compare it to the ground truth. The goal for the ranker is to minimize the number of inversions in ranking i.e. cases where the pair of results are in the wrong order relative to the ground truth.</p> <ol start="7"><li><p><strong>远程监督Distant Supervision</strong>
+该算法的核心思想是将文本与大规模知识图谱进行实体对齐，利用知识图谱已有的实体间关系对文本进行标注。远程监督基于的基本假设是：如果从知识图谱中可获取三元组R（E1，E2）（注：R代表关系，E1、E2代表两个实体），且E1和E2共现与句子S中，则S表达了E1和E2间的关系R，标注为训练正例。</p></li> <li><p>SQL优化</p></li></ol> <ul><li>大表join小表，大表为主表</li> <li>如果有很多小文件，mappper太多，运算速度会慢，可以设置每个mapper的大小默认为64M</li> <li>如果数据分布不均匀，可以使用<code>distribute by rand()</code>，可以让不均衡的数据重新分布</li></ul> <ol start="9"><li>第一次用vscode的菜鸟踩坑经历
+debug的时候总是提示“Cannot find runtime 'node' on PATH”，后来发现是launch.json里没有配置runtimeExecutable，应该是酱婶儿的</li></ol> <div class="language-json extra-class"><pre class="language-json"><code>    <span class="token punctuation">{</span>
+    <span class="token comment">// Use IntelliSense to learn about possible attributes.</span>
+    <span class="token comment">// Hover to view descriptions of existing attributes.</span>
+    <span class="token comment">// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387</span>
+    <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;8.16.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;configurations&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+            <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;request&quot;</span><span class="token operator">:</span> <span class="token string">&quot;launch&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Launch Program&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;program&quot;</span><span class="token operator">:</span> <span class="token string">&quot;${workspaceFolder}/main.js&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;runtimeExecutable&quot;</span><span class="token operator">:</span> <span class="token string">&quot;/Users/maureen/.nvm/versions/node/v8.16.0/bin/node&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></div><footer class="page-edit"><!----><div class="last-updated"><span class="prefix">Last Updated: </span><span class="time">5/7/2019, 11:14:50 AM</span></div></footer><!----></main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.c7007cc2.js" defer></script><script src="/assets/js/3.d747811d.js" defer></script><script src="/assets/js/2.7c3b14ab.js" defer></script><script src="/assets/js/14.909998d3.js" defer></script>
+  </body>
+</html>
